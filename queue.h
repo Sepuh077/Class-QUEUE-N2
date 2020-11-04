@@ -16,7 +16,7 @@ public:
         first = NULL;
     }
 
-    queue(const queue& a) {
+    queue(const queue<T>& a) {
         first = NULL;
         size = 0;
         node* b = a.first;

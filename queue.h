@@ -59,7 +59,7 @@ public:
         }
     }
 
-    T getFirst() {
+    T getFirst() const {
         return first->value;
     }
 
@@ -68,7 +68,7 @@ public:
         first = NULL;
     }
 
-    void print() {
+    void print() const {
         node* q = first;
         for(int i = 1;i <= size; ++i) {
             std::cout<<q->value<<" ";
